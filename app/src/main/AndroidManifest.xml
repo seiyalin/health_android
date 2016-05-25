@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.misssea.new_health" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".applicationTrans"
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".personalInfoActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".health_examination" >
+        </activity>
+        <activity android:name=".child_management" >
+        </activity>
+        <activity android:name=".vaccination" >
+        </activity>
+        <activity android:name=".under_1year_visit" >
+        </activity>
+        <activity android:name=".between1and2years" >
+        </activity>
+        <activity android:name=".new_born" >
+        </activity>
+        <activity android:name=".between3and6years" >
+        </activity>
+        <activity android:name=".pregnancy_management" >
+        </activity>
+        <activity android:name=".prenatal_1" >
+        </activity>
+        <activity android:name=".prenatal_2to5" >
+        </activity>
+        <activity android:name=".postnatal" >
+        </activity>
+        <activity android:name=".postnatal_42d_visit" >
+        </activity>
+        <activity android:name=".focus_groups_management" >
+        </activity>
+        <activity android:name=".hypertension" >
+        </activity>
+        <activity android:name=".diabetes" >
+        </activity>
+        <activity android:name=".clinic_management" >
+        </activity>
+        <activity android:name=".clinic_reception" >
+        </activity>
+        <activity android:name=".transfer_out" >
+        </activity>
+        <activity android:name=".transfer_in" >
+        </activity>
+        <activity android:name=".user_activity" >
+        </activity>
+        <activity android:name=".login_activity" >
+        </activity>
+        <activity android:name=".register_activity" >
+        </activity>
+    </application>
+
+</manifest>

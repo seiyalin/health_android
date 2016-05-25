@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_username"
+            android:id="@+id/login_username"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_username"
+            android:layout_below="@+id/login_username"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="@string/login_username_hint"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_userID"
+            android:id="@+id/login_userID"
+            android:layout_below="@+id/edit_username"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_userID"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/login_userID"
+            android:hint="@string/login_userID_hint"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:id="@+id/login_button"
+            android:layout_below="@+id/edit_userID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_register_link"
+            android:id="@+id/register_link"
+            android:textColorLink="#0066cc"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/edit_userID"
+            android:layout_alignEnd="@+id/edit_userID"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/button_cl"
+            android:layout_below="@+id/edit_userID"
+            android:layout_alignLeft="@+id/edit_userID"
+            android:layout_alignStart="@+id/edit_userID"/>
+    </RelativeLayout>
+</LinearLayout>

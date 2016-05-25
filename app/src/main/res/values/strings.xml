@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">健康档案</string>
+    <string name="login_username">用户名</string>
+    <string name="login_userID">档案编号</string>
+    <string name="login_username_hint">请输入真实姓名</string>
+    <string name="login_userID_hint">请输入身份证号或档案编号</string>
+    <string name="login_button">登录</string>
+    <string name="login_register_link">没有档案？<a href="#">我要建档</a></string>
+</resources>
